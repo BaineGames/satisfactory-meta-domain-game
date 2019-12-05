@@ -1,0 +1,42 @@
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<style>
+  
+    #thing{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     text-align: center;
+     margin-top: -100px;
+     margin-left: -50px;
+     width: 320px;
+     height: 100px;
+     }​
+
+     .run{
+         background-color:white;
+     }
+ 
+ </style>
+ 
+ <div id='thing'>
+ <h1><a target='_blank' href='https://www.satisfactorygame.com/'>Go to the site</a><br><a target='_blank' href='https://www.satisfactorygame.com/#faq-1-section'>Read FAQ</a><br><a target='_blank' href='https://store.steampowered.com/app/526870/'>Wishlist and follow on steam</a><br><a target='_blank' href='https://discord.gg/satisfactory'>Bug discord</a><br><div class='run'><a href='#'>bainegames says click this for a key nicely</a></div></h1></div>
+ 
+
+ <script>
+ 
+$(document).ready(function(){
+
+    $('.run').click(function(){
+        $(this).css('position','fixed');
+        $(this).css('top',(Math.random()*100).toFixed(0)+"%");
+        $(this).css('left',(Math.random()*100).toFixed(0)+"%");
+        console.log();
+    });
+
+});
+ 
+ </script>
